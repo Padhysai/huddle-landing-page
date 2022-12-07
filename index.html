@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Huddle landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: 'hsl(322, 100%, 66%)',
+            lightpink: 'hsl(321, 100%, 78%)',
+            lightred: 'hsl(0, 100%, 63%)',
+            darkcyan: 'hsl(192, 100%, 9%)',
+            paleblue: 'hsl(207, 100%, 98%)',
+          }
+        },
+        fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+          'opensans': ['"Open Sans"', 'sans-serif'],
+        },
+        content: {
+          'communities': 'url(./images/icon-communities.svg)',
+          'messages': 'url(./images/icon-messages.svg)'
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="font-opensans">
+  <!-- Navigation Section -->
+  <div class="container mx-auto w-11/12 py-10 md:py-16">
+    <nav class="flex justify-between items-center">
+      <img class="h-6 md:h-8" src="./images/logo.svg" alt="logo">
+      <a class="border border-lightpink rounded-full w-28 md:w-36 text-center hover:shadow-lg text-md md:text-base p-1 md: py-2 font-opensans text-pink shadow-md"
+        href="#">Try it Free</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div
+    class="container max-w-[1440px] mx-auto w-11/12 md:w-10/12 pt-16 md:pt-28 flex flex-col justify-center items-center">
+    <h1 class="text-center text-3xl md:text-5xl font-poppins text-darkcyan">Build The Community Your Fans Will Love</h1>
+    <p class="font-opensans text-center w-10/12 md:w-3/4 mx-auto py-8 text-slate-500 text-xl">Huddle re-imagines the way
+      we
+      build
+      communities. You have a voice, but so does
+      your audience. Create connections with your users as you engage in genuine discussion.</p>
+    <a class="my-6 bg-pink text-white text-md md:text-xl py-4 w-2/4 xl:w-1/4 text-center rounded-full shadow-lg hover:bg-lightpink"
+      href="#">Get Started For Free</a>
+    <img class="pt-16 w-10/12" src="./images/screen-mockups.svg" alt="hero image">
+  </div>
+
+  <div
+    class="container max-w-[1440px] mx-auto w-6/12 md:w-10/12 flex flex-col md:flex-row justify-around my-16 gap-16 py-8">
+    <div class="flex flex-col gap-4 before:block before:content-communities">
+      <h3 class="text-7xl font-bold text-darkcyan text-center">1.4k+</h3>
+      <p class="text-slate-500 text-center">Communities Formed</p>
+    </div>
+    <div class="flex flex-col gap-4 before:block before:content-messages">
+      <h3 class="text-7xl font-bold text-darkcyan text-center">2.7m+</h3>
+      <p class="text-slate-500 text-center">Messages Sent</p>
+    </div>
+  </div>
+
+  <div class="w-full bg-paleblue my-40">
+    <div class="container mx-auto w-11/12 md:w-10/12 py-16 flex flex-col gap-6">
+      <div class="flex items-center flex-col-reverse md:flex-row gap-12">
+        <div class="flex flex-col md:flex-auto md:w-2/4 items-center md:items-start">
+          <h4 class="text-3xl font-bold font-poppins py-4 text-darkcyan">Grow Together</h4>
+          <p class="text-md text-slate-500 text-center md:text-start md:w-11/12">Generate meaningful discussions with
+            your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+        <img class="md:flex-auto md:w-2/4" src="./images/illustration-grow-together.svg" alt="grow-together">
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full my-40">
+    <div class="container mx-auto w-11/12 md:w-10/12 py-16 flex flex-col gap-6">
+      <div class="flex items-center flex-col-reverse md:flex-row-reverse gap-12">
+        <div class="flex flex-col md:flex-auto md:w-2/4 items-center md:items-start">
+          <h4 class="text-3xl font-bold font-poppins py-4 text-darkcyan">Flowing Conversations</h4>
+          <p class="text-md text-slate-500 text-center md:text-start md:w-11/12">You wouldn't paginate a conversation in
+            real life, so why do it online? Our threads have
+            just-in-time loading for a more natural flow.</p>
+        </div>
+        <img class="md:flex-auto md:w-2/4" src="./images/illustration-flowing-conversation.svg" alt="grow-together">
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full bg-paleblue my-40">
+    <div class="container mx-auto w-11/12 md:w-10/12 py-16 flex flex-col gap-6">
+      <div class="flex items-center flex-col-reverse md:flex-row gap-12">
+        <div class="flex flex-col md:flex-auto md:w-2/4 items-center md:items-start">
+          <h4 class="text-3xl font-bold font-poppins py-4 text-darkcyan">Your Users</h4>
+          <p class="text-md text-slate-500 text-center md:text-start md:w-11/12">It takes no time at all to integrate
+            Huddle with your app's authentication solution. This means,
+            once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+        <img class="md:flex-auto md:w-2/4" src="./images/illustration-your-users.svg" alt="grow-together">
+      </div>
+    </div>
+  </div>
+  <!-- Try it free
+
+  Build The Community Your Fans Will Love
+
+  Huddle re-imagines the way we build communities. You have a voice, but so does
+  your audience. Create connections with your users as you engage in genuine discussion.
+
+  Get Started For Free
+
+  1.4k+
+  Communities Formed
+
+  2.7m+
+  Messages Sent
+
+  Grow Together
+  Generate meaningful discussions with your audience and build a strong, loyal community.
+  Think of the insightful conversations you miss out on with a feedback form.
+
+  Flowing Conversations
+  You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+  just-in-time loading for a more natural flow.
+
+  Your Users
+  It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+  once signed in to your app, your users can start chatting immediately.
+
+  Ready To Build Your Community?
+  Get Started For Free
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+  vestibulum a, ultrices quis sem.
+
+  Phone: +1-543-123-4567
+  example@huddle.com
+
+  Newsletter
+  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+  send you spam or pass on your email address
+
+  Subscribe -->
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
